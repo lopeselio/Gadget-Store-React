@@ -1,10 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-function App() {
+function App () {
   return (
-    <h1> Hello from Tech Store! </h1>
-  );
+    <h1> Tech Store! </h1>
+  )
 }
 
-export default App;
+export default App
