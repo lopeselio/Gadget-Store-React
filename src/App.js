@@ -11,11 +11,18 @@ import HomePage from './pages/HomePage'
 import ProductsPage from './pages/ProductsPage'
 import SingleProductPage from './pages/SingleProductPage'
 import { Route, Switch } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
+import Sidecart from './components/SideCart'
+import Footer from './components/Footer'
 
 function App () {
   return (
     <>
       {/* navbar, sidebar, cart, footer */}
+      <Navbar />
+      <Sidebar />
+      <Sidecart />
       <Switch>
         <Route path='/' exact component={HomePage} />
         <Route path='/about' component={AboutPage} />
@@ -26,6 +33,7 @@ function App () {
         <Route component={DefaultPage} />
 
       </Switch>
+      <Footer />
     </>
   )
 }
