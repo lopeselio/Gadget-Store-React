@@ -5,12 +5,11 @@ const ProductContext = React.createContext()
 
 class ProductProvider extends Component {
   render () {
-    <ProductContext.Provider value='Hello from Product Context'>
-      {this.props.children}
-    </ProductContext.Provider>
-    return {
-
-    }
+    return (
+      <ProductContext.Provider value='Hello from Product Context'>
+        {this.props.children}
+      </ProductContext.Provider>
+    )
   }
 }
 
