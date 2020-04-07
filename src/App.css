@@ -11,6 +11,16 @@
   --mainSpacing: 0.3rem;
 }
 
+.text-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+}
+
+.text-main {
+  color: var(--primaryColor)
+}
+
 body {
   font-family: 'Open-Sans', sand-serif !important;
   background: var(--mainGrey) !important;
