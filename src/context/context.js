@@ -6,7 +6,7 @@ const ProductContext = React.createContext()
 class ProductProvider extends Component {
   render () {
     return (
-      <ProductContext.Provider value='Hello from Product Context'>
+      <ProductContext.Provider value='Hello from Context'>
         {this.props.children}
       </ProductContext.Provider>
     )
