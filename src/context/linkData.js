@@ -1,4 +1,4 @@
-export const linkData = [
+const linkData = [
   {
     id: 1,
     text: 'home',
@@ -25,3 +25,5 @@ export const linkData = [
     path: '/cart'
   }
 ]
+
+export default linkData
