@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import 'App.css'
+import syled from 'styled-components'
 
 function App () {
   return (
