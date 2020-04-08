@@ -1,15 +1,14 @@
 import React from 'react'
 import { ProductConsumer } from '../context/context'
+import HeroPage from '../components/HeroPage'
+import { Link } from 'react-router-dom'
 
 export default function HomePage () {
   return (
     <>
-      <ProductConsumer>
-        {value => {
-          console.log(value)
-          return <h1> Hello from Home Page </h1>
-        }}
-      </ProductConsumer>
+      <HeroPage>
+        <Link to='/products'>Our Products</Link>
+      </HeroPage>
     </>
   )
 }

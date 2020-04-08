@@ -7,7 +7,7 @@ class ProductProvider extends Component {
   state = {
     sidebarOpen: false,
     cartOpen: false,
-    cartItems: 110,
+    cartItems: 0,
     links: linkData
   };
   // handle sidebar
