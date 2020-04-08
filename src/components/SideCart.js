@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProductConsumer } from './context'
+import { ProductConsumer } from './../context/context'
 import styled from 'styled-components'
 
 export default function SideCart () {
@@ -25,7 +25,7 @@ const CartWrapper = styled.div`
   height: 100%;
   background: var(--mainGrey);
   z-index: 1;
-  transform: ${props => (props.show ? 'translateX(0)' : 'translateX(100)')}
+  transform: ${props => (props.show ? 'translateX(0)' : 'translateX(100)')};
   border-left: 4px solid var(--primaryColor);
   transition: var(--mainTransition);
   @media (min-width: 576px){
