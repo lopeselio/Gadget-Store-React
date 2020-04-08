@@ -3,9 +3,14 @@ import { ProductConsumer } from './context'
 import styled from 'styled-components'
 
 export default function SideCart () {
-  return (
-    <div>
-      Hello from Sidecart
-    </div>
-  )
+  return <ProductConsumer>
+    {value => {
+      const {cartOpen, closeCart, cart} = value
+      return 
+    }}
+  </ProductConsumer>
 }
+
+const CartWrapper = styled.div`
+
+`
