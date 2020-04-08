@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function HomePage () {
   return (
     <>
-      <HeroPage title='Awesome Gadgets'>
+      <HeroPage title='Awesome Gadgets' max='true'>
         <Link to='/products'>Our Products</Link>
       </HeroPage>
     </>
