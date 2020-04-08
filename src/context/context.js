@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { linkData } from './linkData'
+import { linkData } from '../context/linkData'
 const ProductContext = React.createContext();
 //Provider
 //Consumer
