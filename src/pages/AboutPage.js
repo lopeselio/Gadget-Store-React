@@ -1,11 +1,11 @@
 import React from 'react'
 import Info from '../components/AboutPage/Info'
-import Hero from '../components/Hero'
+import HeroPage from '../components/HeroPage'
 import aboutBcg from '../images/aboutBcg.jpeg'
 export default function AboutPage () {
   return (
     <>
-      <Hero img={aboutBcg} />
+      <HeroPage img={aboutBcg} />
       <Info />
     </>
   )
