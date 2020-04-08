@@ -1,15 +1,15 @@
 import React from 'react'
-import { ProductConsumer } from './../context/context'
+import { ProductConsumer } from '../context'
 import styled from 'styled-components'
-
 export default function SideCart () {
   return (
     <ProductConsumer>
       {value => {
+        // eslint-disable-next-line no-unused-vars
         const { cartOpen, closeCart, cart } = value
         return (
           <CartWrapper show={cartOpen} onClick={closeCart}>
-            <p> cart items </p>
+            <p>cart items</p>
           </CartWrapper>
         )
       }}
@@ -25,10 +25,10 @@ const CartWrapper = styled.div`
   height: 100%;
   background: var(--mainGrey);
   z-index: 1;
-  transform: ${props => (props.show ? 'translateX(0)' : 'translateX(100)')};
+  transform: ${props => (props.show ? 'translateX(0)' : 'translateX(100%)')};
   border-left: 4px solid var(--primaryColor);
   transition: var(--mainTransition);
-  @media (min-width: 576px){
+  @media (min-width: 576px) {
     width: 20rem;
   }
 `

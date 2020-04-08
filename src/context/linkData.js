@@ -16,7 +16,7 @@ const linkData = [
   },
   {
     id: 4,
-    text: 'contacts',
+    text: 'contact',
     path: '/contact'
   },
   {
@@ -25,5 +25,4 @@ const linkData = [
     path: '/cart'
   }
 ]
-
 export default linkData
