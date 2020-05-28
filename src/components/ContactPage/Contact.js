@@ -20,6 +20,9 @@ export default function Contact () {
             <div className='form-group'>
               <textarea className='form-control' name='message' rows='10' placeholder='hello there buddy' />
             </div>
+            <div className='form-group mt-3'>
+              <input type='submit' className='form-control' name='subject' placeholder='important!!!' />
+            </div>
           </form>
         </div>
       </div>
