@@ -24,6 +24,18 @@ class ProductProvider extends Component {
     singleProduct: {},
     loading: true
   };
+  componentDidMount() {
+    this.setProducts(items)
+  }
+
+  setProducts = (products) => {
+    let storeProducts = products.map(item =>{
+      const {id} = item.sys
+      const product = {id, ...item.fields}
+      return product
+    })
+    console.log(storeProducts)
+  }
   // handle sidebar
   handleSidebar = () => {
     this.setState({ sidebarOpen: !this.state.sidebarOpen });
