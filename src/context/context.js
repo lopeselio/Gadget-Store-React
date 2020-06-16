@@ -39,14 +39,19 @@ class ProductProvider extends Component {
     });
     //  featured products
     let featuredProducts = storeProducts.filter(item => item.featured === true);
-    this.setState({
-      storeProducts,
-      filteredProducts: storeProducts,
-      featuredProducts,
-      cart: this.getStorageCart(),
-      singleProduct: this.getStorageProduct(),
-      loading: false
-    });
+    this.setState(
+      {
+        storeProducts,
+        filteredProducts: storeProducts,
+        featuredProducts,
+        cart: this.getStorageCart(),
+        singleProduct: this.getStorageProduct(),
+        loading: false
+      },
+      () => {
+        this.addTotals();
+      }
+    );
   };
   // get cart from local storage
   getStorageCart = () => {
@@ -58,10 +63,35 @@ class ProductProvider extends Component {
   };
   // get totals
   getTotals = () => {
-    let subTotal = 0
+    let subTotal = 0;
+    let cartItems = 0;
+    this.state.cart.forEach(item => {
+      subTotal += item.total;
+      cartItems += item.count;
+    });
+
+    subTotal = parseFloat(subTotal.toFixed(2));
+    let tax = subTotal * 0.2;
+    tax = parseFloat(tax.toFixed(2));
+    let total = subTotal + tax;
+    total = parseFloat(total.toFixed(2));
+    return {
+      cartItems,
+      subTotal,
+      tax,
+      total
+    };
   };
   //add totals
-  addTotals = () => {};
+  addTotals = () => {
+    const totals = this.getTotals();
+    this.setState({
+      cartItems: totals.cartItems,
+      cartSubTotal: totals.subTotal,
+      cartTax: totals.tax,
+      cartTotal: totals.total
+    });
+  };
   // sync storage
   syncStorage = () => {};
   //add to cart
