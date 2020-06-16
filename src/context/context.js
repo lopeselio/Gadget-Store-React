@@ -57,7 +57,9 @@ class ProductProvider extends Component {
     return {};
   };
   // get totals
-  getTotals = () => {};
+  getTotals = () => {
+    let subTotal = 0
+  };
   //add totals
   addTotals = () => {};
   // sync storage
