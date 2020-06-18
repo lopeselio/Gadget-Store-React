@@ -4,7 +4,7 @@ import { socialData } from "./socialData"
 import { items } from "./data/productData"
 const ProductContext = React.createContext()
 
-
+//Creating provider and consumer componens
 //Provider
 //Consumer
 class ProductProvider extends Component {
