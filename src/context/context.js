@@ -3,6 +3,8 @@ import { linkData } from "./linkData"
 import { socialData } from "./socialData"
 import { items } from "./data/productData"
 const ProductContext = React.createContext()
+
+
 //Provider
 //Consumer
 class ProductProvider extends Component {
