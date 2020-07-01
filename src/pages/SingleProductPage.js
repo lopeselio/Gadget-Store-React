@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Hero from '../components/Hero'
+import Hero from '../components/HeroPage'
 import singleProductImg from '../images/singleProductBcg.jpeg'
 import { ProductConsumer } from '../context'
 export default function SingleProductPage () {
