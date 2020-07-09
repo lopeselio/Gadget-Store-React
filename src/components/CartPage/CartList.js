@@ -17,24 +17,21 @@ export default function CartList () {
               }
               return (
                 <>
-                  {cart.map(item => ( 
-                    <CartItem 
-                      key={ item.id} 
-                      CartItem={item} 
-                      increment={increment} 
-                      decrement={decrement} 
-                      removeItem={removeItem} 
+                  {cart.map(item => (
+                    <CartItem
+                      key={item.id}
+                      CartItem={item}
+                      increment={increment}
+                      decrement={decrement}
+                      removeItem={removeItem}
                     />
                   ))}
                 </>
               )
-            }
-
-            }
+            }}
           </ProductConsumer>
         </div>
       </div>
-      <CartItem />
     </div>
   )
 }
