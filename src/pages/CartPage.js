@@ -1,9 +1,12 @@
 import React from 'react'
-
+import CartSection from '../components/CartPage'
+import HeroPage from '../components/HeroPage'
+import cartBcg from '../images/storeBcg.jpeg'
 export default function CartPage () {
   return (
     <>
-      Hello from Cart Page
+      <HeroPage img={cartBcg} />
+      <CartSection />
     </>
   )
 }
