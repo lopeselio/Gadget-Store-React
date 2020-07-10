@@ -77,7 +77,7 @@ export default function ProductFilter () {
                     name='shipping'
                     id='shipping'
                     onChange={handleChange}
-                    value={shipping && true}
+                    checked={shipping && true}
                   />
                 </div>
 
