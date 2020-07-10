@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { linkData } from "./linkData";
 import { socialData } from "./socialData";
-import { items } from "./data/productData";
+import { items } from "./productData";
 const ProductContext = React.createContext();
 //Provider
 //Consumer
